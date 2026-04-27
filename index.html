@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memories</title>
+
+  <!-- Polices Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav">
+    <a class="nav-logo" href="#" onclick="afficherSection('accueil'); return false;">memories</a>
+    <ul class="nav-links">
+      <li><a data-section="accueil"  id="nav-accueil"  class="active">accueil</a></li>
+      <li><a data-section="quiz"     id="nav-quiz">quiz</a></li>
+      <li><a data-section="galerie"  id="nav-galerie">galerie</a></li>
+      <li><a data-section="capsule"  id="nav-capsule">capsule</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ============================================================
+       SECTION ACCUEIL
+       ============================================================ -->
+  <section class="section active" id="section-accueil">
+    <div class="hero">
+      <p class="hero-eyebrow" id="accueil-eyebrow"></p>
+      <h1 class="hero-titre" id="accueil-titre"></h1>
+      <p class="hero-sous-titre" id="accueil-sous-titre"></p>
+
+      <img class="hero-photo" id="accueil-photo" src="" alt="" />
+
+      <div class="hero-message">
+        <p id="accueil-message"></p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION QUIZ
+       ============================================================ -->
+  <section class="section" id="section-quiz">
+
+    <div class="quiz-header">
+      <h2 id="quiz-titre"></h2>
+      <p id="quiz-sous-titre"></p>
+    </div>
+
+    <!-- Contenu du quiz (masqué après la dernière question) -->
+    <div id="quiz-contenu">
+      <div class="quiz-progress-bar">
+        <div class="quiz-progress-fill" id="quiz-progress-fill" style="width: 0%"></div>
+      </div>
+
+      <div class="quiz-card">
+        <p class="quiz-compteur" id="quiz-compteur"></p>
+        <p class="quiz-question" id="quiz-question"></p>
+        <div class="quiz-options" id="quiz-options"></div>
+
+        <!-- Feedback affiché après validation -->
+        <div class="quiz-feedback" id="quiz-feedback">
+          <p class="quiz-feedback-verdict" id="quiz-feedback-verdict"></p>
+          <p class="quiz-feedback-texte" id="quiz-feedback-texte"></p>
+          <img class="quiz-feedback-photo" id="quiz-feedback-photo" src="" alt="" style="display:none" />
+        </div>
+
+        <div class="quiz-boutons">
+          <button class="btn-valider" id="btn-valider" onclick="validerReponse()">Valider →</button>
+          <button class="btn-suivant" id="btn-suivant" onclick="questionSuivante()">Question suivante →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Résultat final -->
+    <div class="quiz-resultat" id="quiz-resultat">
+      <p style="font-size:12px;color:#aaa;margin-bottom:.5rem;letter-spacing:.15em;text-transform:uppercase">score final</p>
+      <p class="quiz-score" id="quiz-score"></p>
+      <p class="quiz-resultat-msg" id="quiz-resultat-msg"></p>
+      <button class="btn-recommencer" onclick="recommencerQuiz()">Recommencer</button>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       SECTION GALERIE
+       ============================================================ -->
+  <section class="section" id="section-galerie">
+
+    <div class="galerie-header">
+      <h2 id="galerie-titre"></h2>
+      <p id="galerie-sous-titre"></p>
+    </div>
+
+    <!-- Les photos sont injectées ici par main.js depuis config.js -->
+    <div class="masonry" id="masonry"></div>
+
+  </section>
+
+
+  <!-- ============================================================
+       SECTION CAPSULE TEMPORELLE
+       ============================================================ -->
+  <section class="section" id="section-capsule">
+
+    <!-- Vue verrouillée (avant la date d'ouverture) -->
+    <div class="capsule-container" id="capsule-verrouillee">
+      <div class="capsule-icone">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+          <rect x="5" y="11" width="14" height="10" rx="2"/>
+          <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+          <circle cx="12" cy="16" r="1" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <h2 id="capsule-titre"></h2>
+      <p class="capsule-description" id="capsule-description"></p>
+      <div class="capsule-date-pill" id="capsule-date-pill"></div>
+
+      <div class="capsule-decompte">
+        <div class="capsule-unite">
+          <span class="capsule-nombre" id="c-jours">—</span>
+          <span class="capsule-label">jours</span>
+        </div>
+        <div class="capsule-unite">
+          <span class="capsule-nombre" id="c-heures">—</span>
+          <span class="capsule-label">heures</span>
+        </div>
+        <div class="capsule-unite">
+          <span class="capsule-nombre" id="c-minutes">—</span>
+          <span class="capsule-label">minutes</span>
+        </div>
+        <div class="capsule-unite">
+          <span class="capsule-nombre" id="c-secondes">—</span>
+          <span class="capsule-label">secondes</span>
+        </div>
+      </div>
+
+      <p class="capsule-sous-texte" id="capsule-sous-texte"></p>
+    </div>
+
+    <!-- Vue ouverte (après la date d'ouverture) -->
+    <div class="capsule-ouverte" id="capsule-ouverte" style="display:none; max-width:640px; margin:0 auto; text-align:center;">
+      <h2 id="capsule-titre-ouverture"></h2>
+      <p id="capsule-sous-titre-ouverture"></p>
+      <div class="capsule-videos" id="capsule-videos"></div>
+    </div>
+
+  </section>
+
+
+  <!-- Scripts — config.js doit être chargé AVANT main.js -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -25,7 +25,7 @@ const CONFIG = {
     titre: "Pour toi,\nmaman",
 
     // Sous-titre sous le titre
-    sousTitre: "Quelques photos, jeux, et surtout des souvenirs pour te rappeler qu'on t'aime fort",
+    sousTitre: "Quelques souvenirs pour te rappeler qu'on t'aime fort",
 
     // Photo principale — mettre le fichier dans /photos/ et indiquer son nom ici
     // Exemple : "photos/famille-noel.jpg"

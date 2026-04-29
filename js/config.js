@@ -25,14 +25,14 @@ const CONFIG = {
     titre: "Pour toi,\nmaman",
 
     // Sous-titre sous le titre
-    sousTitre: "Un espace fait avec amour, pour te raconter ce que les mots du quotidien n'arrivent pas toujours à dire.",
+    sousTitre: "Quelques photos, jeux, et surtout des souvenirs pour te rappeler qu'on t'aime fort",
 
     // Photo principale — mettre le fichier dans /photos/ et indiquer son nom ici
     // Exemple : "photos/famille-noel.jpg"
     photoAccueil: "photos/photo-accueil.jpg",
 
     // Message d'accueil en italique
-    messageAccueil: "Écris ici ton message d'accueil — quelques lignes pour accueillir maman sur le site. Ça peut être une phrase intime, un souvenir, une déclaration.",
+    messageAccueil: "Tu es ma maman à moi ! Et à moi aussi !",
   },
 
 
@@ -41,7 +41,7 @@ const CONFIG = {
   // ------------------------------------------------------------
   quiz: {
     titre: "À quel point nous connais-tu ?",
-    sousTitre: "Quelques questions pour voir si tu nous as bien observés.",
+    sousTitre: "Quelques questions pour voir si tu nous as bien observés pendant qu'on grandissait.",
 
     // Messages selon le score final
     // [0 bonne réponse, 1-2 bonnes réponses, toutes bonnes]
@@ -97,7 +97,7 @@ const CONFIG = {
   // ------------------------------------------------------------
   galerie: {
     titre: "Nos souvenirs",
-    sousTitre: "Les moments qu'on n'oublie pas.",
+    sousTitre: "Ceux qu'on oubliera jamais",
 
     // Photos de la galerie — mettre les fichiers dans /photos/galerie/
     // L'ordre ici = l'ordre d'affichage dans la galerie

@@ -68,7 +68,7 @@ const CONFIG = {
         ],
         bonne: 1,
         feedback: "ça se voit que le droit est plus grand",
-        photo: null,
+        photo: "pieds.jpg",
       },
       {
         question: "Quel était le combo de jouets préféré de Ben et Noah ?",
@@ -156,7 +156,7 @@ const CONFIG = {
         ],
         bonne: 1,
         feedback: "Le plus dur c'était d'esquiver le gardien de nuit",
-        photo: null,
+        photo: "piscine.jpg",
       },
       {
         question: "Laquelle de ces bêtises de soirée Ben n'a PAS faite ?",
@@ -167,7 +167,7 @@ const CONFIG = {
         ],
         bonne: 1,
         feedback: "Désolé Maman j'ai fait les deux autres",
-        photo: null,
+        photo: "drift.jpg",
       },
 
 ],

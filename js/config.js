@@ -32,7 +32,7 @@ const CONFIG = {
     photoAccueil: "photos/photo-accueil.jpg",
 
     // Message d'accueil en italique
-    messageAccueil: "Tu es ma maman à moi ! Et à moi aussi !",
+    messageAccueil: "Ça c'est ma maman à moi ! Et à moi aussi !",
   },
 
 

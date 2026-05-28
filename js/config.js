@@ -60,35 +60,117 @@ const CONFIG = {
     //   photo      : nom du fichier photo dans /photos/quiz/ — ou null si pas de photo
     questions: [
       {
-        question: "Question 1 — à compléter",
-        reponses: ["Réponse A", "Réponse B", "Réponse C"],
-        bonne: 1,  // → Réponse B est la bonne réponse
-        feedback: "Petit mot personnalisé après la question 1. À compléter.",
-        photo: null  // Exemple avec photo : "souvenir-question1.jpg"
+        question: "Quelle est la pointure de Ben ?",
+        reponses: [
+          "45 pied gauche / 44 pied droit",
+          "44 pied gauche / 45 pied droit",
+          "44,5",
+        ],
+        bonne: 1,
+        feedback: "ça se voit que le droit est plus grand",
+        photo: null,
       },
       {
-        question: "Question 2 — à compléter",
-        reponses: ["Réponse A", "Réponse B", "Réponse C"],
-        bonne: 2,  // → Réponse C est la bonne réponse
-        feedback: "Petit mot personnalisé après la question 2. À compléter.",
-        photo: "souvenir-q2.jpg"  // Fichier à placer dans /photos/quiz/
+        question: "Quel était le combo de jouets préféré de Ben et Noah ?",
+        reponses: [
+          "Playmobile & Kapla",
+          "Lego & Géomag",
+          "Pokémon & Zhuzhu pets",
+        ],
+        bonne: 0,
+        feedback: "Des Playmobiles dans des tours de Kapla, des heures et des heures...",
+        photo: null,
       },
       {
-        question: "Question 3 — à compléter",
-        reponses: ["Réponse A", "Réponse B", "Réponse C"],
-        bonne: 0,  // → Réponse A est la bonne réponse
-        feedback: "Petit mot personnalisé après la question 3. À compléter.",
-        photo: null
+        question: "Combien de pays Noah a-t-il foulé depuis 2 ans ?",
+        reponses: [
+          "6",
+          "7",
+          "8",
+        ],
+        bonne: 2,
+        feedback: "8 pays ! Fallait pas oublier la France.",
+        photo: null,
       },
-      // ---- Pour ajouter une question, copie ce bloc ----
-      // {
-      //   question: "Nouvelle question ?",
-      //   reponses: ["Option 1", "Option 2", "Option 3"],
-      //   bonne: 0,
-      //   feedback: "Le petit mot qui va avec.",
-      //   photo: null
-      // },
-    ],
+      {
+        question: "Qu'est-ce que « Skylanders » ?",
+        reponses: [
+          "Un groupe de musique",
+          "Une saga de livres",
+          "Un jeu vidéo",
+        ],
+        bonne: 2,
+        feedback: "Un jeu Wii — avec des figurines physiques qui s'importent dans le jeu.",
+        photo: null,
+      },
+      {
+        question: "À qui appartenait le doudou « Crapouille » ?",
+        reponses: [
+          "Ben",
+          "Noah",
+          "Aucun des deux",
+        ],
+        bonne: 1,
+        feedback: "C'était le doudou de Noah !",
+        photo: null,
+      },
+      {
+        question: "Combien de dents de sagesse reste-t-il à Noah ?",
+        reponses: [
+          "1",
+          "3",
+          "0",
+        ],
+        bonne: 2,
+        feedback: "0 — il s'en est débarrassé récemment.",
+        photo: null,
+      },
+      {
+        question: "Quel plat Ben préfère-t-il ?",
+        reponses: [
+          "Lasagnes",
+          "Raclette",
+          "Risotto aux cèpes",
+        ],
+        bonne: 2,
+        feedback: "Risotto aux cèpes —un méga classique.",
+        photo: null,
+      },
+      {
+        question: "Laquelle de ces enseignes existe ?",
+        reponses: [
+          "Tutti Pouletti",
+          "100% Crousty",
+          "Maxi Chicken",
+        ],
+        bonne: 1,
+        feedback: "100% Crousty — oui, ça existe vraiment.",
+        photo: null,
+      },
+      {
+        question: "Quelle bêtise Noah a-t-il faite en soirée ?",
+        reponses: [
+          "Boire un shot nu debout sur une table",
+          "Entrer par effraction dans une piscine municipale",
+          "Jeter un gros tapis marocain dans la rue depuis un balcon au 6ème étage",
+        ],
+        bonne: 1,
+        feedback: "Le plus dur c'était d'esquiver le gardien de nuit",
+        photo: null,
+      },
+      {
+        question: "Laquelle de ces bêtises de soirée Ben n'a PAS faite ?",
+        reponses: [
+          "S'introduire de nuit aux Cascades de Trévoux",
+          "Démarrer un engin de chantier (bétonneuse)",
+          "Assister à un rassemblement clandestin de drift à L.A",
+        ],
+        bonne: 1,
+        feedback: "Désolé Maman j'ai fait les deux autres",
+        photo: null,
+      },
+
+],
   },
 
 

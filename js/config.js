@@ -156,7 +156,7 @@ const CONFIG = {
         ],
         bonne: 1,
         feedback: "Le plus dur c'était d'esquiver le gardien de nuit",
-        photo: "piscine.jpg",
+        photo: "piscine.jpeg",
       },
       {
         question: "Laquelle de ces bêtises de soirée Ben n'a PAS faite ?",

@@ -179,18 +179,22 @@ const CONFIG = {
   // ------------------------------------------------------------
   galerie: {
     titre: "Nos souvenirs",
-    sousTitre: "Ceux qu'on oubliera jamais",
+    sousTitre: "On t'aime fort Maman",
 
     // Photos de la galerie — mettre les fichiers dans /photos/galerie/
     // L'ordre ici = l'ordre d'affichage dans la galerie
     // Le masonry s'adapte automatiquement à tous les formats (portrait, paysage, carré...)
     photos: [
-      { fichier: "photo1.jpg", legende: "" },  // legende optionnelle au survol
-      { fichier: "photo2.jpg", legende: "" },
-      { fichier: "photo3.jpg", legende: "" },
-      { fichier: "photo4.jpg", legende: "" },
-      { fichier: "photo5.jpg", legende: "" },
-      { fichier: "photo6.jpg", legende: "" },
+      { fichier: "8.jpg", legende: "" },  // legende optionnelle au survol
+      { fichier: "2.jpg", legende: "" },
+      { fichier: "3.jpg", legende: "" },
+      { fichier: "4.jpg", legende: "" },
+      { fichier: "5.jpg", legende: "" },
+      { fichier: "6.jpg", legende: "" },
+      { fichier: "7.jpg", legende: "" },
+      { fichier: "1.jpg", legende: "" },
+      { fichier: "9.jpg", legende: "" },
+      { fichier: "10.jpg", legende: "" },
       // Ajoute autant de photos que tu veux sur ce modèle :
       // { fichier: "mon-fichier.jpg", legende: "Été 2019" },
     ],

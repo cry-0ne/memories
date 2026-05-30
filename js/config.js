@@ -19,7 +19,7 @@ const CONFIG = {
   // ------------------------------------------------------------
   accueil: {
     // Petite ligne au-dessus du titre principal
-    eyebrow: "Fête des mères · 2025",
+    eyebrow: "Fête des mères · 2026",
 
     // Titre principal (le \n crée un retour à la ligne)
     titre: "Pour toi,\nmaman",
